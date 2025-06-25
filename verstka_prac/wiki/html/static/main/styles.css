@@ -1,0 +1,228 @@
+/* Для отображения кода нужен xmp!! */
+body {
+      padding: 0;
+      margin: 0;
+}
+
+h1 {
+      margin-bottom: 0;
+}
+
+h2 {
+      margin-bottom: 0;
+}
+
+.labl {
+      margin-bottom: 0;
+}
+
+/* Контент */
+.logs {
+      text-align: center;
+      display: inline-block;
+}
+
+.logszxc {
+      text-align: right;
+}
+
+.navigation {
+      border: solid 1px black;
+      display: inline-block;
+      padding-right: 10px;
+      background-color: rgb(243, 243, 243);
+}
+
+.navigation a {
+      text-decoration: none;
+      color: blue;
+}
+
+p a {
+      text-decoration: none;
+      color: blue;   
+}
+
+code {
+      font-size: 15px;
+      padding: 2px;
+      border: #dadada solid 1px;
+      cursor: alias;
+}
+
+.p_in_cont {
+      color: black;
+      font-size: 16px;
+      margin-bottom: 10px;
+      margin-left: 3px;
+      text-align: left;
+      display: block;
+}
+
+.a_in_cont {
+      text-decoration: none;
+      color: blue;
+}
+
+.img_in_cont {
+      margin-top: 5px;
+      margin-bottom: 5px;
+}
+
+.code_in_cont {
+      color: black;
+      background-color: rgb(236, 236, 236);
+      cursor: text ;
+}
+
+.conteiner {
+      text-align: center;
+      display: inline-block;
+      margin-bottom: 5px;
+      margin-right: 5px;
+      margin-top: 5px;
+      border: 1px solid black;
+      margin-left: 0;
+      padding: 5px;
+      line-height: 1;
+      overflow: hidden;
+}
+
+.conteinerx {
+      display: inline-block;
+      margin: 5px 5px 5px 0;
+}
+
+.conteinerx img {
+      float: right;
+      margin-left: 8px;
+}
+
+.img_xx {
+      display: block;
+      text-align: right;
+}
+
+.red_line {
+      text-indent: 15px;
+}
+
+.html_tag {
+      background-color: #78c0ff;
+      color: black;
+      margin-top: 0;
+}
+
+.ah_in_cont {
+      text-decoration: none;
+      color: black;
+}
+
+.ah_in_cont:visited {
+      color: blue;
+}
+
+/* Верхняя навигационная панель */
+.nav_cont {
+      display: flex;
+      /* flex означает расположение эл. в строку */
+      justify-content: space-between;
+}
+
+.nav_cont ul {
+      display: flex;
+      word-spacing: 3px;
+      /* Чтобы убрать декор списка нужен list-style: ; */
+      list-style: none;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+}
+
+.nav_cont nav ul li a {
+      display: block;
+      padding: 10px;
+      color: blue;
+}
+
+.conteiner h2 {
+      font-size: 20px;
+      padding-top: 2px;
+}
+
+.out {
+      float: right;
+      margin-left: 8px;
+}
+
+.a_in_nav {
+      text-decoration: none;
+      color: blue;
+      background-color: #e3f4fc;
+      border: 1px solid #00aeff;
+      border-top: none;
+      font-size: 14px;
+}
+
+.a_in_nav:hover {
+      text-decoration: underline;
+}
+
+.search_in_nav {
+      margin-left: 8px;
+      width: 300px;
+      height: 40px;
+}
+
+/* main */
+.main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+}
+
+.head {
+      width: 15%;
+      background-color: #e7e7e7;
+}
+
+.head div {
+      width: 100%;
+}
+
+.head img {
+      width: 100%;
+      height: 200px;
+      margin-top: 15px;
+}
+
+.head ul {
+      list-style: none;
+}
+
+.head li {
+      margin-bottom: 2px;
+      font-size: 16px;
+}
+
+.head h3 {
+      color: black;
+      text-align: center;
+      border-bottom: 0.5px solid black;
+      font-size: 16px;
+}
+
+.section {
+      width: 85%;
+}
+
+.content {
+      padding-left: 20px;
+}
+
+/* media позволяет адаптивно изменять стили элементов в зависимости от характеристик устройства, таких как ширина экрана, ориентация, разрешение и другие медиа-функции. */
+@media (max-width: 850px) {
+      .nav_cont {
+            flex-direction: column;
+      }
+}

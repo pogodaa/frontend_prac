@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <meta charset="utf-8" lang="ru">
+            <link rel="stylesheet" href="template/styles.css">
+            <title>13.3</title>
+      </head>
+
+      <body>
+            <p>Шрифт по умолчанию равен 16px, величина 1em и 1rem = 16px</p>
+
+            <ul>
+                  <li>Шрифт по умолчанию
+                        <ul>
+                              <li>равен 16px
+                                    <ul>
+                                          <li>величина 1em и 1rem = 16px</li>
+                                    </ul>
+                              </li>
+                        </ul>
+                  </li>
+            </ul><br>
+
+            <ul class="ull">
+                  <li>Шрифт по умолчанию
+                        <ul>
+                              <li>равен 16px
+                                    <ul>
+                                          <li>величина 1em и 1rem = 16px</li>
+                                    </ul>
+                              </li>
+                        </ul>
+                  </li>
+            </ul>
+
+            <!-- елси div пустые, то margin получится только слева -->
+            <div id="first">
+                  <div id="second">
+                        <div id="third">
+                              <div id="fourth">
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <!-- т.к div не пустые, margin работает со всех сторон
+            но из-за фиксированной ширины-высоты они выходят друг за рамки друг друга -->
+            <div id="first">text
+                  <div id="second">text
+                        <div id="third">text
+                              <div id="fourth">text
+                              </div>
+                        </div>
+                  </div>
+            </div>            
+      </body>
+</html>

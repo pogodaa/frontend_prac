@@ -1,0 +1,21 @@
+.bl {
+      color: aqua;
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 70px;
+}
+
+.bl2 {
+      /* Есть display который принимает:
+      block - делает блочными
+      inline - делает строчным
+      inline-block - делате строчно-блочным 
+      Пока хз что это (01.04.2024)*/
+      display: block;
+
+      width: 300px;
+      height: 300px;
+      padding: 50px;
+      text-align: center;
+      border: 5px #22ff00 solid;
+}

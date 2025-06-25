@@ -1,0 +1,62 @@
+.bl {
+      width: 100px;
+      height: 100px;
+      background-color: blueviolet;
+
+      /* position: Это позициирование; */
+      /* position: absolute это означает что этот объект будет игнорировать другие; */
+      position: relative;
+
+      /* Всегда нужно указывать 2 стороны отступа в (PX) */
+      top: 100px;
+      left: 100px;
+}
+
+.bl2 {
+      width: 30px;
+      height: 30px;
+      background-color: yellow;
+      position: absolute;
+      left: 50px;
+      top: 50px;
+}
+
+.bl3 {
+      width: 100px;
+      height: 100px;
+      background-color: brown;
+      position: absolute;
+      top: 50px;
+      right: 50px;
+
+      z-index: 1;
+}
+
+.bl4 {
+      width: 50px;
+      height: 50px;
+      background-color: black;
+      position: absolute;
+      top: 50px;
+      right: 50px;
+
+      /* z-index: чем больше будет значение  у z-index тем выше элемент будет распологаться поверх других; */
+      z-index: 2;
+}
+
+.bl5 {
+      width: 100px;
+      height: 100px;
+      background-color: aquamarine;
+
+      position: fixed;
+      /* fixed означает что при скроле странице объект не будет двигаться */
+    
+    
+      bottom: 50px;
+      right: 500px;
+}
+
+.bl6 {
+      height: 1000px;
+}

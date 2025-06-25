@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+      <head>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="styles.css">
+            <title>0</title>
+      </head>
+
+      <body>
+            <!-- h это загаловок -->
+            <!-- тэг big озночает что буквы станут больше 
+            тэг small делает маленькие буквы-->
+            <h1>Привет мир! <small>(h1)</small></h1>
+            <h2>Привет мир! (h2)</h2>
+            <h3>Привет мир! (h3)</h3>
+            <h4>Привет мир! (h4)</h4>
+            <h5>Привет мир! (h5)</h5>
+            <h6>Привет мир! <big>(h6)</big></h6>
+
+            <!-- p это текст 
+            тэг b делает текст жирным, 
+            тэг em делает текст курсивом, 
+            тэг strike перечёркивает -->
+            <p><strike>Lorem</strike> ipsum dolor, <big>sit</big> amet consectetur adipisicing elit. Placeat praesentium consectetur <b>aliquid</b> quibusdam nesciunt officia harum porro <em>delectus</em> perferendis possimus, facilis recusandae assumenda! Exercitationem dolorem placeat qui doloremque? Quidem!</p>
+
+            <!-- тэг sub смещяет буквы в низ от всей строчки  -->
+            <p>H<sub>2</sub>O</p>
+
+            <!-- тэг sup смещает буквы вверх от всей строчки -->
+            <!-- тэг br сносит строку как \n -->
+            <p>a<sup>2</sup></p><br>
+
+            <!-- Чтобы создать абвириатуру можно где, <abbr title="Описна при наведении">Название</abbr> -->
+            <abbr class="abbr" title="Counter-Strike 2">CS2</abbr><br>
+
+            <br>function some() {
+                  return "Some"
+            }<br>
+
+            <!-- Чтобы сохранить вид как ниже нужен тэг pre -->
+            <br><pre>function some() {
+                  return "Some"
+            }
+            </pre>
+
+            <!-- тэг <code></code> используется для ввода кода -->
+            <code>for i in elem:
+                  while i >= 1:
+                        i++
+            </code><br>
+
+            <!-- a это ссылка -->
+            <!-- hr создает линию -->
+
+            <!-- a это ссылка -->
+            <!-- href='ссылка'
+            title='Подсказка'
+            target='тип перехода на страницу:
+            _self - открытие в одной и тойже вкладке' 
+            _blank - открывает в новой вкладке 
+            _parent - открывает в одной и тойже вкладке
+            _top - открывает в одной и тойже вкладке -->
+            <br><a href="https://www.youtube.com/watch?v=Fk5G3rNquJI&list=PLnMj__TQhCpE-9ZDGsiPvuxyM6t153mVe" title="Подсказка" target="_blank">Видео</a><br>
+            <br><a href="templates/lk.html" title="Личный кабинет" target="_blank">Личный кабинет</a><br>
+            <br><a href="#BottomOfPage">Вниз</a><br><hr>
+
+            <!-- img это фото -->
+            <img class="img" src="D:\(!) Works\(!) Html Css\proekti\__tutorial\(0) skelet_h_p_a_img\img\dog.jpg" alt="dog" title="Cобака"><hr>
+            <img src="https://img.freepik.com/free-photo/aerial-view-of-green-forest_144627-45271.jpg?w=1380&t=st=1725364608~exp=1725365208~hmac=81108f9d881a1b21151936c5cc3f68e76993f2ab27e1060193e0726f65661676" alt="" width="100%" height="1000px" title="Лес"><hr>
+
+            <!-- Есть такая штука как ЯКОРЬ, котоырй переносит фокус страницы -->
+            <a name="BottomOfPage">Спасибо за внимание!</a><br><br>
+            <a href="mailto:rta_19_00@mail.ru">Тех поддержка</a><br><br><br>
+
+<!-- Также можно создать сслыку на саму страницу -->
+            <a href="#">Пусто</a>
+      </body>
+</html>

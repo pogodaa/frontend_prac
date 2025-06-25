@@ -1,0 +1,259 @@
+body {
+      margin: 0;
+      padding: 0;
+      background-color: rgba(239, 239, 239, 0.979);
+}
+
+body hr {
+      margin-top: 4px;
+      padding: 0;
+}
+
+body h2,h1,h3,h4,h5,h6 {
+      margin: 15px 1px;
+      padding: 0;
+}
+
+a {
+      text-decoration: none;
+      color: blue;
+}
+
+a:hover {
+      border-bottom: 1px solid blue;
+}
+
+code {
+      border: 1px solid black;
+      background-color: #f7f7ff;
+      padding: 2px 4px;
+}
+
+ul {
+      list-style: inside;
+}
+
+li {
+      margin: 5px;
+}
+
+xmp {
+      padding: 10px;
+      margin: 10px;
+      text-align: left;
+      font-size: 15px;
+      background-color: #f7f7ff;
+      border: 0.5px solid grey;
+      white-space: pre-wrap;
+}
+
+#xmp_first {
+      display: inline-block;
+}
+
+.xmp_pan {
+      text-align: left;
+}
+
+.red_line {
+      text-indent: 8px;
+}
+
+.css_tabl {
+      margin-left: 16%;
+}
+
+/* Нав пан */
+.nav_pan {
+      display: flex;
+      justify-content: space-between;
+}
+
+.nav_pan ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 2px 8px;
+}
+
+#nav_pan_search {
+      height: 30px;
+      width: 300px;
+      margin-left: 10px;
+}
+
+/* Конт */
+.content {
+      padding: 8px;
+      background-color: white;
+}
+
+/* содержание */
+.sdr {
+      background-color: #f2fbfc;
+      display: inline-block;
+      font-size: 15px;
+      padding-right: 8px;
+      border: 1px solid black;
+}
+
+.sdr_ogl {
+      margin-bottom: 4px;
+}
+
+.sdr p {
+      text-align: center;
+}
+
+.list_decor ol, 
+.list_decor ul {
+      list-style: circle;
+}
+
+/* таблица */
+.tabl_main_all {
+      display: block;
+}
+
+.tabl_raschetov {
+      color: black;
+      background-color: #eee;
+      border-collapse: collapse;
+      margin: 10px 0;
+}
+
+.xmp_list ul {
+      margin: 0;
+      padding: 0;
+}
+
+.xmp_list li {
+      margin: 5px 0;
+}
+
+.table_ones {
+      list-style: decimal;
+}
+
+.table_ones ul {
+      margin: 0; /* Убирает внешний отступ у списка */
+      padding: 0; /* Убирает внутренний отступ у списка */
+}
+  
+.table_ones li {
+      margin: 0; /* Убирает внешний отступ у элементов списка */
+      padding: 5px 0; /* Добавляет отступы только сверху и снизу элементам списка */
+}
+
+.tabl_raschetov th {
+      background-color: #d3d3d3;
+      font-size: 18px;
+      padding: 8px;
+}
+
+.tabl_raschetov td {
+      font-size: 16px;
+      padding: 8px;
+}
+
+.css_vklad img {
+      max-width: 200px;
+      max-height: 200px;
+}
+
+.img_vikisklad {
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+}
+
+.css_images {
+      text-align: center;
+}
+
+.history_create_css  {
+      float: right;
+      padding: 10px;
+      background-color: #d3d3d3;
+      margin-left: 5px;
+}
+
+.history_create_css img {
+      max-width: 400px;
+      max-height: 400px;
+      margin-bottom: 3px;
+}
+
+.history_create_css li
+
+.history_create_css p, 
+.history_create_css ul {
+      margin: 3px 0;
+}
+
+#crc_greenyellow::before {
+      content: "●";
+      color: greenyellow;
+      margin-right: 5px;
+}
+
+#crc_green::before {
+      content: "●";
+      color: green;
+      margin-right: 5px;
+}
+
+#crc_brown::before {
+      content: "●";
+      color: brown;
+      margin-right: 5px; 
+}
+
+#crc_red::before {
+      content: "●";
+      color: red;
+      margin-right: 5px;
+}
+
+.css_vklad span {
+      padding-right: 20px;
+      text-align: left;
+}
+
+.css_vklad ul, 
+.css_vklad ol {
+      list-style: none;
+      text-align: left;
+      padding-left: 20px;
+      margin: 0;
+}
+
+.css_vklad p {
+      display: block;
+      margin: 5px 0px;
+}
+
+.css_vklad h3 {
+      color: black;
+      background-color: #c3f9ff;
+      text-align: center;
+      min-width: 190px;
+      margin: 0 0 6px 0;
+      text-align: center;
+}
+
+.css_vklad {
+      text-align: left;
+      float: right;
+      margin-left: 10px;
+      margin-bottom: 20px;
+      border: 1px solid black;
+      padding: 8px;
+}
+
+.vklad_main {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      float: right;
+}

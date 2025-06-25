@@ -1,0 +1,70 @@
+body {
+      font-family: 'Times New Roman', Times, serif;
+}
+
+/* 1-ая таблица */
+.tb1 {
+      text-align: left;    
+/* Свойство `border-collapse` в CSS применяется к таблицам (`<table>`) 
+и определяет, как границы ячеек таблицы объединяются между собой. */
+
+/* **`separate`** (по умолчанию): Каждая ячейка таблицы имеет собственные 
+границы, которые не объединяются с границами соседних ячеек. Это значение 
+создает промежуток между границами ячеек. */
+      border-collapse: separate;
+      border-spacing: 5px;
+      color: blueviolet;
+      background-color: aliceblue;
+      border: 20px solid aliceblue;
+      border-radius: 20px;
+}
+
+.tb1 th {
+      font-size: 22px;
+      padding: 10px;
+}
+
+.tb1 td {
+      font-size: 16px;
+      padding: 10px;
+      background-color: wheat;
+      border-radius: 20px;
+}
+
+/* 2-ая таблица */
+.tb2 {
+      border-collapse: collapse;
+      color: black;
+      background-color: bisque;
+}
+
+.tb2 th, 
+.tb2 td:first-child{
+      font-size: 30px;
+      padding: 15px;
+      background-color: coral;
+      color: white;
+}
+
+.tb2 th,
+.tb2 td {
+      border-width: 0 1px 1px 0;
+      border-style: solid;
+      border-color: white;
+}
+
+.tb2 td {
+      font-size: 20px;
+      padding: 15px;
+}
+
+caption span {
+      text-align: center;
+      color: #4c4c4cee;
+      font-size: 50px;
+      font-weight: 600;
+}
+
+caption {
+      margin-bottom: 20px;
+}

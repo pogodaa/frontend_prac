@@ -1,0 +1,21 @@
+/* 
+Селектор по:
+      тегу - 1 усл.ед
+      классу - 10 усл.ед
+      id - 100 усл.ед
+      стиль в самом теге - 1000 усл.ед
+*/
+/* Та строка в которой больше вес, является главной */
+
+.main {
+      background-color: burlywood;
+      border: 5px dotted blue;
+}
+
+/* Чтобы придать максимальный вес, тоесть
+его нельзя будет изменить нужно в любом свойстве указать
+!important */
+.div_border {
+      background-color: violet;
+      border: 1px solid black !important;
+}

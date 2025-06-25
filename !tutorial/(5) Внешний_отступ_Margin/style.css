@@ -1,0 +1,35 @@
+.bl {
+      width: 500px;
+      height: 500px;
+
+      background-color: aquamarine;
+      /* background-color: Заливка; */
+
+      margin: 40px 70px 30px 100px;
+      /* margin: Это внешний отступ; */
+      /* Также как и внутренний отступ Padding, margin можно писать от 1 до 4 параметров */
+}
+
+.bl2 {
+      width: 400px;
+      height: 400px;
+
+      background-color: blueviolet;
+
+      margin: 70px auto;
+      /* auto означает что будет по центру (тоесть программа автоматически рассчитает сколько пикселей нужно для того чтобы штука была по центру, а затем вставляет её) */
+      
+      /* Также если нужно сделать отступ только с одной стороный на примере сверху, то есть 4 команды:
+      margin-top: сверху;
+      margin-left: слева;
+      margin-bottom: снизу;
+      margin-right: справа; */
+}
+
+.bl3 {
+      width: 800px;
+      height: 800px;
+      background-color: chartreuse;
+
+      margin-top: 80px;
+}

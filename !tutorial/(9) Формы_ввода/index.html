@@ -1,0 +1,197 @@
+<!-- Форма ввода это ввод номера телефона или пароль или поле поиска в специальное поле -->
+<!DOCTYPE html>
+<html>
+      <head>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="styles.css">
+            <title>9</title>
+      </head>
+
+      <body>
+            <form action="" method="post">
+                  <input type="text">
+            </form><br>
+
+<!-- Для того чтобы указать пользователю что ему нужно в поле нужно прописать placeholder  -->
+            <form action="" method="post">
+                  <input type="text" placeholder="Введите текст">
+            </form><br>
+
+<!-- Также можно создать ограничение по вводу символов с помощью maxkenght='' -->
+      <form action="" method="post">
+            <label for="Ogran">Введите имя</label>
+            <input id="Ogran" type="text" placeholder="max_length: 10" maxlength="10">
+      </form><br>
+
+<!-- Также можно установить значение по дефолту с помощью value='' -->
+<!-- Также можно указать что это поле только для просмотра с помощью readonly -->
+            <form action="" method="post">
+                  <input type="text" value="значение по дефолту" readonly>
+            </form><br>
+ 
+<!-- placeholder редко используется, вместо него предпочетают связку label -->
+            <form action="" method="post">
+                  <label for="name">Введите имя</label>
+                  <input id="name" type="text">
+            </form><br>
+
+<!-- Также можно создать поле пароль с помощью <input type="password"> -->
+            <form action="" method="post">
+                  <label for="password">Введите пароль</label>
+                  <input type="password" maxlength="32" id="password">
+            </form><br>
+
+<!-- Также можно создать поле email с помощью <input type="email"> -->
+            <form action="" method="post">
+                  <label for="email">Введите email</label>
+                  <input type="email" id="email">
+            </form><br>
+
+<!-- Также можно создать поле url с помощью <input type="url"> -->
+            <form action="" method="post">
+                  <label for="url">Введите url</label>
+                  <input type="url" id="url">
+            </form><br>
+
+<!-- Также можно создать поле color с помощью <input type="color"> ПОДДЕРЖИВАЕТСЯ НЕ ВО ВСЕХ БРАУЗЕРАХ -->
+            <form action="" method="post">
+                  <label for="color">Установите желаемый цвет</label>
+                  <input type="color" id="color">
+            </form><br>
+
+<!-- Также можно создать поле date с помощью <input type="date"> ПОДДЕРЖИВАЕТСЯ НЕ ВО ВСЕХ БРАУЗЕРАХ -->
+            <form action="" method="post">
+                  <label for="date">Укажите дату вашего рождения</label>
+                  <input type="date" id="date">
+            </form><br>
+
+<!-- Также можно создать поле time с помощью <input type="time"> ПОДДЕРЖИВАЕТСЯ НЕ ВО ВСЕХ БРАУЗЕРАХ -->
+            <form action="" method="post">
+                  <label for="time">Укажите время</label>
+                  <input type="time" id="time">
+            </form><br>
+
+<!-- Также можно создать поле datetime с помощью <input type="datetime"> ПОДДЕРЖИВАЕТСЯ НЕ ВО ВСЕХ БРАУЗЕРАХ -->
+            <form action="" method="post">
+                  <label for="dt">Укажите время и дату</label>
+                  <input type="datetime" id="dt">
+            </form><br>
+
+<!-- Также можно создать поле file который берёт файл с компа <input type="file"> -->
+            <form action="" method="post">
+                  <label for="file">Выберите файл</label>
+                  <input type="file" id="file">
+            </form><br>
+
+<!-- Также можно создать поле search который будет создан для поиска вводного на сайте -->
+            <form action="" method="post">
+                  <label for="sr">Поиск на сайте</label>
+                  <input type="search" id="sr" placeholder="Поиск на сайте">
+            </form><br>
+
+<!-- Можно скрыть поле с помощью hidden -->
+            <form action="" method="post">
+                  <input type="text" hidden>
+            </form><br>
+
+<!-- Можно деактивировать поле, тоесть оно будет, но в него ничего нельзя будет прописать с помощью disabled -->
+            <form action="" method="post">
+                  <label for="de">Введите имя</label>
+                  <input type="text" id="de" disabled>
+            </form><br>
+
+<!-- также можно сделать так чтобы не отправлять пустое поле на сервер с помощью required -->
+            <form action="" method="post">
+                  <label for="3">Введите текст (это required)</label>
+                  <input type="text" id="3" required>
+            </form><br>
+
+<!-- Можно создать поле для заметок или как в видео о себе с помощью textarea вместо INPUT -->
+            <form action="" method="post">
+                  <label for="info">Инфо</label>
+                  <textarea id="info" class="info" required></textarea>
+            </form><br>
+
+<!-- Чтобы сделать выбор для пользователя нужно прописать select -->
+            <form action="" method="post">
+                  <label for="cars">Выберите марку автомобиля</label>
+<!-- Создаём селекцию (select) -->
+                  <select name="cars">
+<!-- Чтобы создать опцию нужен (option) -->
+                        <option>bmw</option>
+                        <option>audi</option>
+                        <option>honda</option>
+                        <option>hundai</option>
+                        <option>kia</option>
+<!-- Чтобы указать какое значение будет по умолочанию нужно прописать selected -->
+<!-- Чтобы заблокировать опцию нужно прописать disabled -->
+                        <option selected disabled>-----</option>
+                  </select>
+            </form><br>
+
+<!-- Можно указать то, что выбор можно было сделать не 1, а несколько с помощью multipie -->
+<!-- Также с помощью size можно указать сколько будет выведено пользователю -->
+            <form action="" method="post">
+                  <label for="towns">Выберите названия городов: </label>
+                  <select size="4" name="towns" multiple>
+                        <option>Краснодар</option>
+                        <option>Калининград</option>
+                        <option>СПБ</option>
+                        <option>Москва</option>
+                        <option>Дмитров</option>
+                        <option disabled selected>-----</option>
+                  </select>
+
+            </form><br>
+
+<!-- Чтобы создать типо выбора где нужно указать 1 выбор ответа то нужно использовать тип radio -->
+            <form action="" method="post">
+                  <label for="male">Мужской</label>
+                  <input name="radio" id="male" type="radio">
+<!-- name='radio' в male u woman означает что можно выбрать только 1 вариант ответа -->
+
+                  <label for="woman">Женский</label>
+                  <input name="radio" id="woman" type="radio">
+            </form><br>
+
+            <form action="" method="post">
+
+                  <label for="vegetable">Овощи</label>
+                  <input name="radio" id="vegetable" type="radio">
+
+                  <label for="fruit">Фрукты</label>
+                  <input name="fruit" id="fruit" type="radio">
+
+            </form><br>
+
+<!-- Тип checkbox нужен чтобы user поставил галку -->
+            <form action="" method="post">
+                  <label for="ckbx">Ознакомились ли вы?</label>
+                  <input id="ckbx" type="checkbox">
+
+            </form><br>
+
+<!-- Кнопка button чтобы указать текст на кнопке нужен value -->
+            <form action="" method="post">
+                  <input type="button" id="but" value="input-button">
+            </form><br>
+
+<!-- Кнопка submit отправляет данные на сервер  -->
+            <form action="" method="post">
+                  <input type="submit" value="Отправить">
+            </form><br>
+
+<!-- Кнопка reset обновляет страницу ХУЙНЯ РЕДКОСТНАЯ -->
+            <form action="" method="post">
+                  <input type="reset" value="Очистить">
+            </form><br>
+
+            <button>Баттон</button><br><br>
+            <button type="reset">Reset</button>
+            <button type="menu">Menu</button>
+            <button type="button">Button</button>
+            <button type="submit">Submit</button>
+
+      </body>
+
+</html>

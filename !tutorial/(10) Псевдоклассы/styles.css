@@ -1,0 +1,210 @@
+.button {
+      background-color: aquamarine;
+      color: white;
+      padding: 20px;
+      text-decoration: none;
+}
+
+/* Псевдокласс hover (Он отображается когда наводишься на кнопку) */
+/* Для псевдокласс нужно написать как и обычно только дописать ":" и указав метод, в данном случае hover */
+.button:hover {
+      background-color: blue;
+      color: black;
+      text-decoration: underline;
+      text-decoration-color: white;
+}
+
+/* Псевдоклассов очень много :(  */
+/* active активируестся после клика на кнопку */
+.button:active {
+      background-color: yellow;
+      color: brown;
+      text-decoration: line-through;
+      text-decoration-color: black;
+}
+
+.name {
+      color: blue;
+      background-color: black;
+}
+
+/* focus работает при нажатии на него (в поле) */
+.name:focus {
+      color: white;
+      background-color: crimson;
+}
+
+.box:hover {
+/* Можно изменить курсор при наведении с помощью cursor: ; */
+/* Который принимает:
+      no-drop - красный перечёркнутый кружок
+      n-resize - по оси y со стрелками на 2 концах 
+      pointer - курсор как на ссылку */
+      cursor: pointer;
+}
+/* Чтобы обратиться к какомоту из общего класса элемету нужно :first-child */
+.box:first-child {
+      color: blue;
+}
+
+.box:last-child {
+      color: blueviolet;
+}
+
+.box::first-letter {
+      color: aquamarine;
+}
+
+.box:nth-child(3) {
+      color: burlywood;
+}
+
+.box:nth-child(odd) {
+      color: yellowgreen;
+}
+
+.blck {
+      color: burlywood;
+      background-color: black;
+}
+
+.blck::first-letter {
+      color: chartreuse;
+      background-color: brown;
+}
+
+.blck:last-of-type {
+      color: aqua;
+      background-color: yellow;
+}
+
+/* Чтобы изменить в классе отдельный тег, то его нужно указать перед : */
+.bl p {
+      color: salmon;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bl h1 {
+      color: chartreuse;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Если нужно обратиться к одному элементу то :first-of-type */
+.bl h1:first-of-type {
+      color: antiquewhite;
+}
+
+.bl p:last-of-type {
+      color: turquoise;
+}
+
+.bl p:nth-of-type(2) {
+      color: blueviolet;
+}
+
+.bl h1:nth-of-type(2) {
+      color: darkblue;
+}
+
+.ten {
+      padding: 20px;
+      background-color: brown;
+      color: white;
+      text-decoration: none;
+}
+
+/* :visited озночает что при переходе по ссылки на эту страницу (ДЕЛАЙ) ну или по */
+/* Эта штука нужна если нужно отобразить что пользователь уже переходил по ней */
+.ten:visited {
+      background-color: white;
+      color: cornflowerblue;
+}
+
+input:disabled {
+      background-color: aliceblue;
+      color: aqua;
+}
+
+/* можно обращаться даже так: */
+/* к примеру хочу получить пустые классы: */
+p.txt:empty {
+      background-color: chocolate;
+      width: auto;
+      height: 8px;
+}
+
+/* если хочу обратиться НЕ к пустым то используй:
+not() */
+p.txt:not(:empty) {
+      text-align: center;
+}
+
+i.i:not(:empty) {
+      color: blueviolet;
+}
+
+#some_id {
+      width: 50px;
+      height: 18px;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+}
+
+/* after ознчает что ну пример посмотри */
+/* тажке есть before который делает тоже самое только в другую сторону */
+#some_id::after {
+      content: "Hub";
+      width: 50px;
+      height: 25px;
+      background-color: orange;
+      color: black;
+      text-decoration: none;
+}
+
+#uts_id {
+      width: 48px;
+      height: 17px;
+      background-color: blue;
+      color: white;
+      text-decoration: none;
+}
+
+#uts_id::before {
+      content: 'Pidr';
+      width: 50px;
+      height: 20px;
+      background-color: aquamarine;
+      color: black;
+      text-decoration: none;
+}
+
+#uts_id::after {
+      content: '!';
+      width: 50px;
+      height: 20px;
+      background-color: yellow;
+      color: crimson;
+      text-decoration: none;
+}
+
+#uts_id:hover::after {
+      background-color: violet;
+      color: white;
+}
+
+#uts_id:hover::before {
+      background-color: coral;
+      color: black;
+}
+
+#uts_id:hover {
+      background-color: teal;
+      color: yellow;
+}
+
+/* Также можно вывести аттрибут content=attr() */
+.i:empty::after {
+      content: attr(title);
+      color: red;
+}

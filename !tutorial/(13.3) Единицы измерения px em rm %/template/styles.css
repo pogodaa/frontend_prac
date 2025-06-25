@@ -1,0 +1,48 @@
+/* em - проценты в десятичной
+тоесть 100% это тоже самое как и 1 em */
+
+body {
+      font-size: 30px;
+}
+
+ul {
+      list-style: none;
+}
+
+li {
+      /* 92% равносильно 0.92em */
+      font-size: 0.6em;
+}
+
+.ull li {
+/* чтобы не было наследования от каждого родителя,
+есть rem которой наследует от первого */
+      font-size: 1rem;
+}
+
+p {
+      font-size: 2em;
+}
+
+div {
+      width: 300px;
+      height: 300px; 
+      margin: 4em;
+      font-size: 0.7rem;
+}
+
+#first {
+      background-color: red;
+}
+
+#second {
+      background-color: yellowgreen;
+}
+
+#third {
+      background-color: violet;
+}
+
+#fourth {
+      background-color: thistle;
+}

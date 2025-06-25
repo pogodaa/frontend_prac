@@ -1,0 +1,116 @@
+/* Чтобы поменять фон страницы обращаться к :"body" */
+/* ОБРАЩАТЬСЯ БЕЗ ТОЧКИ */
+/* Тут можно указывать классы */
+
+body {
+      /* Можно указать через background-image: указав url; */
+      /* Нужно создать папку в той директории где и рабочая среда, vscode сам найдёт путь */
+      /* background-image: url(img/dog.jpg); */
+
+      /* Можно указать цвет через background-color: Цвет; */
+      /* background-color: Создан для многих тегов; */
+      background-color: antiquewhite;
+      margin: 0;
+      padding: 0;
+}
+
+.bl {
+      width: 1280px;
+      height: 720px;
+
+      /* Чтобы указать картинку можно указать background-image: url(); */
+      background-image: url(img/dog.jpg);
+
+      /* Можно указать расположение с помощью background-position: ; */
+      /* 08.04.2024 ХЗ не работает проще черз position */
+      background-position: center;
+
+      margin: 8px auto;
+
+      /* Для того чтобы фото не повторялись на созданной среде есть:
+      background-repeat: Которое принимает repeat(повторять) no-repeat(не повторять); */
+      background-repeat: no-repeat;
+
+      /* Если после background-repeat: Фото далеко не на весь созданынй макет то; */
+      /* background-size: Который принмает в (%) или cover(который популярней); */
+      background-size: cover;
+
+}
+
+.bl2 {
+      background-image: url(img/town.jpg);
+      width: 100%;
+      height: 2500px;
+      background-color: rgb(85, 76, 76);
+      margin: 12px auto;
+
+      background-repeat: no-repeat;
+
+      /* background-position: Это штука которая определяет позицию в блоке; */
+      /* background-position: Может принмать:
+      top - прижмётся к верху
+      bottom - низ
+      left - лево
+      right - право
+      center - по центру */
+
+      background-position: center;
+}
+
+.bl3 {
+      width: 1000px;
+      height: 1000px;
+      margin: 50px auto;
+      background-repeat: no-repeat;
+
+      /* Можно сделать градиент (Он идёт сверху вниз):
+      background-image: linear-gradient(Цвета (ЧЕРЕЗ ЗАПЯТУЮ); */
+      background-image: linear-gradient(#ff0000, #00bfff, #2200ff, #bbff00);
+}
+
+.bl4 {
+      width: 1000px;
+      height: 1000px;
+      margin: 50px auto;
+      background-repeat: no-repeat;
+
+      /* Для того чтобы градиент шёл с другой стороны нужно указать перед 1-ым цветом направление 
+      to top - сверху
+      to left - слева
+      to right - справа
+      to bottom - снизу вверх*/
+      background-image: linear-gradient(to left,#00bfff, #bbff00, red);
+}
+
+.bl5 {
+      width: 1000px;
+      height: 1000px;
+      margin: 50px auto;
+      
+      /* Чтобы указать цвет под наклоном нужны градсы которые обозначаются как 'deg' */
+      background-image: linear-gradient(45deg, #bbff00, #ff0000);
+}
+
+.bl6 {
+      width: 1000px;
+      height: 1000px;
+      margin: 50px auto;
+
+      /* Ещё есть radial-gradient это круговой градиент (Направление не нужно!)*/
+      background-image: radial-gradient(red,blue);
+}
+
+.bl7 {
+      /* Можно записывать тэги вот так */
+      background: #8a3131 url(img/forest.jpg) no-repeat;
+      /* vh растягивает картинку */
+      height: 100vh;
+      background-size: cover;
+
+      /* Можно зафиксировать картинку при скроле  */
+      background-attachment: fixed;
+}
+
+.bl8 {
+      height: 1000px;
+}

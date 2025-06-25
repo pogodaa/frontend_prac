@@ -1,0 +1,40 @@
+.txt {
+      text-align: center;
+      letter-spacing: 2px;
+      /* letter-spacing: Это расстояние между буквами класса, PX; */
+
+      text-decoration: underline;
+      /* text-decoration: Это декорация текста;
+      underline - снизу подчёркнутый текст 
+      overline - сверху подчёркнутый текст
+      line-through - перечёркнутый текст */
+
+      border: 5px #14a60a dotted;
+      /* border: толщина(PX) цвет тип_границы;
+      Типы границ:
+      solid - сплошная
+      dashed - пунктирная
+      dotted - точечная */
+}
+
+.block {
+      font-size: 20px;
+      text-indent: 20px;
+      /* text-indent: Крассная строка, PX; */
+
+      text-transform: capitalize;
+      /* text-transform: Это штука может;
+      capitalize - делает первую букву каждогго слова заглавными
+      lowercase - делает все буквы в нижний регистр
+      uppercase - делает все буквы в верхний регистр */
+
+      /* word-spacing: Расстояние между словами; */
+      word-spacing: 10px;
+
+      /* line-height: Расстояние между строками; */
+      line-height: 50px;
+}
+
+.k {
+      word-spacing: -45px;
+}

@@ -1,0 +1,50 @@
+* {
+      margin: 0;
+      padding: 0;
+}
+
+.main_nav {
+      display: flex;
+      background-color: rgb(21, 21, 21);
+}
+
+.main_nav_spisk {
+      display: flex;
+}
+
+.main_nav_spisk a {
+      display: block;
+      padding: 0.7em;
+      color: white;
+}
+
+.main_nav_spisk a:hover {
+      background-color: rgb(74, 74, 74);
+}
+
+.nav_burg {
+      display: none;
+}
+
+@media (max-width: 750px) {
+      .nav_burg {
+            font-size: 1.8em;
+            padding-inline: 10px;
+            padding-bottom: 3px;
+            border: none;
+            background-color: rgb(21, 21, 21);
+            color: white;
+            display: block;
+            cursor: pointer;
+      }
+
+      .main_nav_spisk {
+            display: none;
+      }
+
+      .nav_vspl_okn:hover .main_nav_spisk{
+            display: block;
+            position: absolute;
+            background-color: rgb(21, 21, 21);
+      }
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* Стили на google fants */
+
+body {
+      background-color: #2f4f50;
+      font-family: "Inter", sans-serif;
+}
+
+.txt_1_h1 {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      /* font-family: Шрифт; */
+
+      font-size: 45px;
+      /* font-size: Размер, принимает в пикселях!; */
+
+      color: blue;
+      /* color: Цвет; */
+
+      font-weight: 500;
+      /* font-weight: Это толщина текста PX не нужны; */
+      /* bold это жирный 
+      bolder ещё жирней*/
+
+      text-align: center;
+      /* text-align: Это расположение на странице для текста;
+      center - экран по центру
+      right - экран справа
+      lefr - экран слева */
+}
+
+.txt_1_p {
+      font-family: Arial, Helvetica, sans-serif;
+
+      /* Н em означает что н раз больше чем 14px  */
+      font-size: 2em;
+      color: rgb(255, 140, 0);
+
+      line-height: 30px;
+      /* line-height: Это расстояние между строчками, принимает в пикселях; */
+
+      font-style: italic;
+      /* font-style: Наклонные буквы или нет;
+      normal - нормальные буквы
+      italic - наклонные буквы */
+
+      /* justify озночает макс растянутость */
+      text-align: justify;
+}
+
+.ib {
+      color: aquamarine;
+}
+
+/* К id обращатся в css через # а не . */
+/* Также можно обратиться к самому id через # */
+#one {
+      color: yellow;
+      font-size: 3em;
+}
+
+b {
+      color: yellowgreen;
+}
+
+div b {
+      color: brown;
+}
+
+/* Чтобы обратиться к разным тэгам нужна запятая! */
+strike, sub, sup {
+      color: rgb(234, 0, 255);
+}

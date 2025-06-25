@@ -1,0 +1,85 @@
+.bl {
+      width: 100px;
+      height: 200px;
+      background-color: blue;
+      padding: 30px;
+}
+
+.bs {
+      width: 100px;
+      height: 200px;
+      background-color: brown;
+      margin: 20px;
+
+      /* Чтобы сделать края круглые нужен border-radius: ; */
+      border-radius: 30px;
+
+      /* чтобы фигра не увеличивалась после паддинг нужен box-sizing: ; */
+      padding: 30px;
+      box-sizing: border-box;
+}
+
+.sx {
+      width: 100px;
+      height: 200px;
+      background-color: aqua;
+      margin: 20px;
+
+      border-radius: 20px 1px 90px 59px;
+}
+
+.sz {
+      width: 100px;
+      height: 200px;
+      background-color: yellow;
+      position: absolute;
+      top: 20px;
+      right: 50px;
+
+      border-top-right-radius: 72px;
+
+      /* box-shadow u text-shadow можно сделать тень:
+      box-shadow: X Y Степень размытия Цвет; */
+      box-shadow: 12px 32px 20px black;
+}
+
+.cl {
+      position: absolute;
+      color: black;
+      text-shadow: 10px 10px 30px #ff0000;
+
+      position: absolute;
+      right: 550px;
+      bottom: 20px;
+      left: 550px;
+}
+
+.kx {
+      width: 100px;
+      height: 200px;
+      background-color: coral;
+      position: absolute;
+      top: 50px;
+      left: 500px;
+      right: 50px;
+
+/* Для того чтобы сделать блок прозрачным нужно opacity: от 0 до 1 ; */
+      opacity: 0.66;
+}
+
+.bt {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      color: white;
+      background-color: black;
+      text-decoration: none;
+
+      /* чтобы сделать плавный переход в псевдоклассе можно использовать transition: ; */
+      /* transition: имя функции время(в секундах) тип(linear - часто используется); */
+      transition: background-color 1s linear;
+}
+
+.bt:hover {
+      background-color: aquamarine;
+}

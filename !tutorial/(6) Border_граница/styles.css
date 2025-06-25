@@ -1,0 +1,101 @@
+/* Чтобы убрать отступы нужно: */
+*{
+      border: 0;
+      padding: 0;
+}
+
+.bl {
+      background-color: aquamarine;
+      width: 300px;
+      height: 300px;
+      margin: 200px auto;
+      border: 5px #13ed03 solid;
+}
+
+.bl2 {
+      background-color: brown;
+      width: 500px;
+      height: 500px;
+      margin: 200px auto;
+      border-top: 20px #00c3ff dotted;
+}
+
+.bl3 {
+      background-color: #ff00ae;
+      width: 100px;
+      height: 100px;
+      margin: 300px auto;
+      border-right: 9px #00ffae dashed; 
+}
+
+.bl4 {
+      width: 450px;
+      height: 450px;
+      margin: 300px auto;
+      border-bottom: 50px #ff0000 solid;
+      border-right: 50px #3300ff solid;
+
+      /* Можно поменять стиль */
+      border-top: 50px #ff00ae dashed;
+      border-left: 50px #00ff5e solid;
+}
+
+.bl5 {
+      /* Когда нужно оставить пустой сторону нужно прописать сторону и None или 0 */
+      width: 300px;
+      height: 150px;
+      margin: 300px auto;
+
+      border-bottom: none;
+      border-right: 0;
+      border-top: 50px #ff00ae solid;
+      border-left: 50px #00ff5e solid;
+}
+
+.bl6 {
+      height: 300px;
+      width: 300px;
+
+      margin: 200px auto;
+      /* Можно указать вс1 сразу в качестве параметров: */
+      border-width: 20px;
+      /* border-width: Толщина (PX); */
+
+      border-color: #3300ff;
+      /* border-color: Цвет; */
+
+      border-style: dashed;
+      /* border-style: Тип (solid, dashed, dotted); */
+}
+
+.bl7 {
+      margin: 200px auto;
+
+      /* Также можно применять это к каждой отдельной стороне */
+      
+      border-top-width: 70px;
+      border-top-color: #13ed03;
+      border-top-style: dotted;
+}
+
+.limon {
+      width: 200px;
+      height: 150px;
+      border-radius: 5px 60%;
+      background-color: rgb(251, 255, 0);
+      margin: 20px auto;
+      border: double;
+
+      /* Можно указать тип объектат через display: ; 
+      block - блочный
+      inline - строка*/
+}
+
+.nine {
+      width: 100%;
+      height: 300px;
+      text-align: center;
+      padding-top: 50vh;
+      color: white;
+      background-color: #00ff5e;
+}

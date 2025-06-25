@@ -1,0 +1,123 @@
+.r {
+      background-color: red;
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+}
+
+.b {
+      background-color: blue;
+      width: 150px;
+      height: 150px;
+      margin: 20px;
+}
+
+.g {
+      background-color: green;
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+}
+
+.p {
+      background-color: palegoldenrod;
+      width: 50px;
+      height: 50px;
+      margin: 20px;
+}
+
+.h {
+      background-color: hotpink;
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+}
+
+.x {
+      background-color: cadetblue;
+      width: 150px;
+      height: 150px;
+      margin: 20px;
+}
+
+.l {
+      background-color: lawngreen;
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+}
+
+.k {
+      background-color: khaki;
+      width: 160px;
+      height: 160px;
+      margin: 20px;
+}
+
+.o {
+      background-color: orange;
+      width: 220px;
+      height: 220px;
+      margin: 20px;
+}
+
+.u {
+      background-color: brown;
+      height: 100px;
+      width: 100px;
+      margin: 20px;
+}
+
+.y {
+      background-color: yellow;
+      height: 120px;
+      width: 120px;
+      margin: 20px;
+}
+
+.t {
+      background-color: thistle;
+      height: 140px;
+      width: 140px;
+      margin: 20px;
+}
+
+.bl {
+      position: absolute;
+      top: 150px;
+      left: 100px;
+}
+
+/* Чтобы получить эти объекти по горизонтали идущие друг за другом нужно display: flexbox; */
+
+.bw {
+      position: absolute;
+      top: 200px;
+      right: 100px;
+
+/* flex = слева на право */
+      display: flex;
+}
+
+.bs {
+      position: absolute;
+      top: 500px;
+      left: 500px;
+      right: 500px;
+
+      display: flex;
+/* Чтобы подогнать размеры нужно align-items: center; */
+      align-items: center;
+}
+
+.bm {
+
+      display: flex;
+      align-items: center;
+/* Чтобы изменить расстояние между объектами нужно justify-content: ; */
+      justify-content: space-around;
+
+      /* space-between - максимальное расстояние
+      space-around - среднее расстояние
+      cener - будут расположены по центру  */
+}

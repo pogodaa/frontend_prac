@@ -1,0 +1,602 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-weight: 400;
+      font-size: 16px;
+      font-family: "Open Sans", sans-serif;
+}
+
+.conteiner,
+.navig_main {
+      margin-inline: 150px;
+}
+
+/* Шапка */
+.header_cont {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+}
+
+.header_search {
+      display: flex;
+}
+
+.header_search input {
+      width: 340px;
+      padding-left: 10px;
+      border: none;
+      outline: none;
+      background-color: rgba(47, 43, 67, 0.04);
+      border-radius: 10px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+}
+
+.header_search input::placeholder {
+      color: rgba(47, 43, 67, 0.4);
+}
+
+.header_search button {
+      border: none;
+      outline: none;
+      background-color: rgba(47, 43, 67, 0.04);
+      border-radius: 10px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      padding: 9px 24px;
+}
+
+.header_search button:hover {
+      cursor: pointer;
+}
+
+.header_questions {
+      background-color: #33836E;
+      padding: 10px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: white;
+}
+
+.header_questions img {
+      position: relative;
+      top: 2px;
+}
+
+.header_questions span {
+      position: relative;
+      top: -3px;
+}
+
+.header_phone_info_title {
+      color: #140A32;
+      font-size: 20px;
+      font-weight: 700;
+}
+
+.header_phone_info_disc {
+      color: #2F2B4380;
+      font-size: 14px;
+}
+
+.head_zakaz_num {
+      border:2px solid #2F2B4326;
+      border-radius: 20px;
+      padding: 10px;
+      text-decoration: none;
+      color: #140A32;
+}
+
+.head_zakaz_num img {
+      position: relative;
+      top: 3px;
+}
+
+.head_zakaz_num span {
+      position: relative;
+      top: -2px;
+      margin-left: 5px;
+}
+
+.header_spisok {
+      display: flex;
+      list-style: none;
+      align-items: center;
+}
+
+.header_spisok a {
+      text-decoration: none;
+      color: #140A32;
+}
+
+.header_spisok li{
+      margin-inline: 20px;
+}
+
+.head_vxod_ili_registration img {
+      position: relative;
+      top: 3px;
+}
+
+.head_vxod_ili_registration span {
+      position: relative;
+      top: -3px;
+}
+
+/* <!-- Главная/ Горячая линия хз как назвать это --> */
+.navig_main {
+      margin-top: 40px;
+      width: 207px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.navig_main span {
+      color: rgba(47, 43, 67, 0.5);
+}
+
+/* <!-- Описание --> */
+.opis_title {
+      width: 957px;
+}
+
+.opis_title_title {
+      font-weight: 700;
+      color: rgba(20, 10, 50, 1);
+      font-size: 38px;
+      margin-top: 50px;
+}
+
+.opis_title_disc {
+      margin-top: 20px;
+}
+
+/* <!-- Задать вопрос юристу --> */
+.vopros_yrist {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      width: 472px;
+}
+
+.left_side {
+      text-align: center;
+      color: white;
+      background-color: rgba(51, 131, 110, 1);
+      padding: 20px;
+      border-radius: 10px;
+}
+
+.left_side a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+}
+
+.right_side_block span {
+      color: rgba(51, 131, 110, 1);
+      font-weight: 700;
+      font-size: 24px;
+      border-bottom: 2px solid rgba(51, 131, 110, 1);
+}
+
+.right_side_block_l {
+      margin-top: 5px;
+      color: rgba(47, 43, 67, 0.5);
+      font-size: 14px;
+}
+
+.opis_panels_lower {
+      margin-top: 40px;
+}
+
+.opis_panels_lower_mm {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      color: rgba(20, 10, 50, 1);
+}
+
+.opis_panels_lower_mm span {
+      position: relative;
+      top: -6px;
+}
+
+.man_image {
+      position: relative;
+
+      display: inline-block;
+}
+
+.all_opis {
+      display: flex;
+}
+
+.right_side_opis {
+      float: right;
+      width: 10px;
+      position: relative;
+      left: 170px;
+}
+
+/* <!-- Текст -->  */
+.info {
+      margin-top: 100px;
+}
+
+.info_title,
+.info_block_card_title {
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 32px;
+}
+
+/* <!-- Как получить бесплатную юридическую консультацию? --> */
+.free_ur_block {
+      margin-top: 80px;
+}
+
+.info_block_card_title {
+      margin-top: 15px;
+      font-size: 20px;
+}
+
+.info_blocks {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+}
+
+.info_block_card_a {
+      text-decoration: none;
+      color: rgba(51, 131, 110, 1);
+}
+
+.info_block_card {
+      width: 250px;
+      padding: 20px;
+      border:2px solid #2F2B4326;
+      border-radius: 20px;
+}
+
+.info_block_raspol_odin {
+      position: relative;
+      top: 19px;
+}
+
+.info_block_raspol_dva {
+      position: relative;
+      top: 38.5px;
+}
+
+/*<!-- Баннер --> */
+.banner_main {
+      margin-top: 80px;
+      margin-bottom: 80px;
+      background-color: #33836E;
+      height: 200px;
+      border-radius: 20px;
+      position: relative;
+      align-items: center;
+      display: flex;
+}
+
+.banner_image_elips {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-bottom-left-radius: 20px;
+}
+
+.banner_image_worker {
+      position: absolute;
+      left: 36px;
+}
+
+.baner_info {
+      position: absolute;
+      left: 313px;
+}
+
+.baner_info_title {
+      color: rgba(255, 255, 255, 1);
+      font-size: 24px;
+      font-weight: 600;
+}
+
+.baner_info_disc {
+      margin-top: 10px;
+      color: rgba(255, 255, 255, 1);
+      font-size: 42px;
+      font-weight: 700;
+}
+
+.baner_urists {
+      position: absolute;
+      right: 117px;
+}
+
+.baner_urists_title {
+      color: rgba(255, 255, 255, 1);
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px;
+}
+
+.baner_urists_disc {
+      display: flex;
+      position: relative;
+}
+
+.baner_urists_disc_image_1 {
+      z-index: 1;
+}
+
+.baner_urists_disc_image_2 {
+      z-index: 2;
+      position: absolute;
+      left: 33px;
+}
+
+.baner_urists_disc_image_3 {
+      z-index: 3;
+}
+
+.baner_urists_disc_image_4 {
+      z-index: 4;
+      position: absolute;
+      left: 99px;
+}
+
+.baner_urists_disc_image_5 {
+      position: absolute;
+      z-index: 5;
+      right: 33px;
+}
+
+.baner_urists_disc_image_6 {
+      position: absolute;
+      z-index: 6;
+      right: 0;     
+}
+
+.baner_urists_disc_image_7 {
+      z-index: 7;
+      position: absolute;
+      right: -33px;
+      width: 62px;
+      height: 62px;
+      background-color: rgba(255, 255, 255, 1);
+      border-radius: 99px;
+      text-align: center;
+}
+
+.baner_urists_disc_image_7_disc {
+      position: relative;
+      top: 18px;
+      color: rgba(47, 43, 67, 0.5);
+      font-size: 16px;
+      font-weight: 600;
+}
+
+/*<!-- help_banner -->*/
+.help_banner_main {
+      margin-bottom: 80px;
+}
+
+.help_banner_row_main {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.baner_info_block_card {
+      padding: 20px;
+      border:2px solid #2F2B4326;
+      border-radius: 20px;
+      width: 560px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+}
+
+.baner_info_block_card_txt {
+      padding-inline: 20px;
+}
+
+/*<!-- Блок почему стоит выбрать нас --> */
+.block_why_us_main {
+      margin-bottom: 80px;
+}
+
+.block_why_us_numbers {
+      width: 469px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.block_why_us_numbers_block_title {
+      color: rgba(51, 131, 110, 1);
+      font-weight: 700;
+      font-size: 28px;
+      margin-bottom: 10px;
+}
+
+.block_left_and_right {
+      display: flex;
+      justify-content: space-between;
+}
+
+.why_us_green_main {
+      background-color: rgba(51, 131, 110, 1);
+      border-radius: 20px;
+      height: 200px;
+
+      display: flex;
+      justify-content: space-between;
+
+      padding: 20px;
+      align-items: center;
+}
+
+.why_us_green_left {
+      position: relative;
+      left: 60px;
+}
+
+.why_us_green_block {
+      width: 471px;
+      height: 56px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.why_us_green_block_left input {
+      background-color: rgba(255, 255, 255, 1);
+      padding: 7px 16px 8px 16px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      height: 56px;
+      width: 249px;
+      position: relative;
+}
+
+.why_us_green_block_left input::placeholder {
+      position: absolute;
+      top: 6px;
+      font-size: 12px;
+      color: rgba(47, 43, 67, 0.4);
+      margin-bottom: 3px;
+}
+
+
+.why_us_green_block_right_button {
+      width: 207px;
+      background-color: rgba(255, 255, 255, 0);
+      border: 1px solid rgba(255, 255, 255, 1);
+      border-radius: 10px;
+      align-items: center;
+      cursor: pointer;
+}
+
+/*<!-- Специальности наших юристов -->*/
+.spec_main_block {
+      margin-top: 30px;
+}
+
+.spec_block_row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+}
+
+.spec_block_row_ftside {
+      border: 2px solid rgba(47, 43, 67, 0.15);
+      padding: 20px;
+      border-radius: 20px;
+      width: 560px;
+      height: 287px;
+}
+
+.spec_block_row_ftside_title {
+      display: flex;
+}
+
+.spec_block_row_ftside_title span {
+      color: rgba(20, 10, 50, 1);
+      font-weight: 600;
+      padding-bottom: 2px;
+      border-bottom: 1px solid rgba(51, 131, 110, 1);
+      margin-left: 15px;
+}
+
+.spec_block_row_ftside_disc {
+      color: rgba(47, 43, 67, 0.7);
+      font-size: 14px;
+      margin-top: 10px;
+}
+
+/*<!-- zadat_vopros_free_block --> */
+.zadat_vopros_free_block_main {
+      margin-top: 60px;
+      height: 200px;
+      background-color: rgba(47, 43, 67, 0.04);
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 80px;
+}
+
+.zadat_vopros_block_txt {
+      width: 295px;
+      position: relative;
+      left: 53px;
+}
+
+.zadat_vopros_block_txt span {
+      font-size: 30px;
+      font-weight: 700;
+}
+
+.zadat_vopros_block_center_block {
+      display: flex;
+      justify-content: space-between;
+      width: 423px;
+      position: relative;
+      margin-bottom: 18px;
+}
+
+.zadat_vopros_free_block_main img {
+      width: 292px;
+}
+
+.zadat_vopros_block_center p {
+      font-size: 12px;
+      color: rgba(47, 43, 67, 0.4);
+}
+
+.zadat_vopros_block_center_block input {
+      padding: 7px 16px 8px 16px;
+      border: 1px solid rgba(47, 43, 67, 0.15);
+      outline: none;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 1);
+      width: 201px;
+      height: 56px;
+}
+
+.zadat_vopros_block_center_block input::placeholder {
+      position: absolute;
+      top: 4px;
+}
+
+.zadat_vopros_block_center {
+      width: 423px;
+}
+
+.zadat_vopros_block_center_block_button {
+      width: 207px;
+      height: 56px;
+
+      border: none;
+      outline: none;
+      padding: 16px 36px 18px 36px;
+
+      align-items: center;
+      background-color: rgba(51, 131, 110, 1);
+      border-radius: 10px;
+      cursor: pointer;
+      color: rgba(255, 255, 255, 1);
+}
+
+.zadat_vopros_block_center_block_button span {
+      font-weight: 600;
+      font-size: 16px;
+}
